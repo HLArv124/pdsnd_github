@@ -15,7 +15,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let us explore some US bikeshare data!')
     
     while True:
         city_options = ['Chicago','New York City','Washington']
@@ -99,7 +99,7 @@ def time_stats(df):
     print("The most common hour of day is", most_common_hour_of_day)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def station_stats(df):
@@ -152,7 +152,7 @@ def user_stats(df):
     count_user_type = df["User Type"].value_counts().to_string()
     print("Find here the user types and amounts: \n", count_user_type)
 
-    # Display counts of gender
+    # Display counts of gender if available. If not available, sorry message is displayed.
     while True:
         try:
             count_gender = df["Gender"].value_counts().to_string()
