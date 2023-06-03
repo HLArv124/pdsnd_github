@@ -99,7 +99,7 @@ def time_stats(df):
     print("The most common hour of day is", most_common_hour_of_day)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*50)
 
 
 def station_stats(df):
