@@ -152,7 +152,7 @@ def user_stats(df):
     count_user_type = df["User Type"].value_counts().to_string()
     print("Find here the user types and amounts: \n", count_user_type)
 
-    # Display counts of gender
+    # Display counts of gender if available. If not available, sorry message is displayed.
     while True:
         try:
             count_gender = df["Gender"].value_counts().to_string()
